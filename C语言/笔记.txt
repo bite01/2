@@ -1,6 +1,7 @@
 知识点一：全局变量在整个工程中都可用
 在同一个源文件中创建不同的.c文件，想要在一个.c文件中使用另一个.c文件中的变量时，只需要在这个.c文件中声明一下这个变量且加上extern，
 举例：extern int age;
+
 知识点二：在vs中，写入代码scanf可能会出现警告，这时只需要在代码的第一行写入#define _CRT_SECURE_NO_WARNINGS 1。
 
 知识点三：const  int  num=4  表示num为常变量
