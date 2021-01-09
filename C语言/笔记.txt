@@ -1,1 +1,65 @@
+知识点一：全局变量在整个工程中都可用
+在同一个源文件中创建不同的.c文件，想要在一个.c文件中使用另一个.c文件中的变量时，只需要在这个.c文件中声明一下这个变量且加上extern，
+举例：extern int age;
+知识点二：在vs中，写入代码scanf可能会出现警告，这时只需要在代码的第一行写入#define _CRT_SECURE_NO_WARNINGS 1。
+
+知识点三：const  int  num=4  表示num为常变量
+const int mx= 10;
+int main()
+{
+    int arr[mx] = { 0 };
+   printf("mx=%d\n",mx);
+return 0;
+}
+这样写就会出错。
+
+知识点四：#define定义的标识符常量
+格式：#define mx 10
+举例：
+ #include<stdio.h>
+#define mx 10
+int main()
+{
+    int arr[mx] = { 0 };
+   printf("mx=%d\n",mx);
+return 0;
+}
+这样写是合法的
+
+知识点五、枚举常量---列举常量
+关键字:enum
+格式：enum 枚举名
+      {
+           常量1，
+常量2，
+等等
+}；
+双引号引起的东西就叫字符串
+
+知识点六：
+两种存放字符串的方式
+int main()
+{
+    char arr1[4] = "abc";
+    //arr1中放入了a,b,c,以及转义字符'\0'
+    char arr2[] = { 'a','b','c' };
+    char arr3[] = { 'a','b','c',0 };
+    //转义字符'\0'为0
+    //所以'\0'是字符串的结束标志
+   printf("%s\n",arr1);
+   printf("%s\n",arr2);
+   printf("%s\n", arr3);
+return 0;
+
+字符串的结束标志是‘\0’，但是不算字符串的长度。
+
+知识点七：
+函数的格式：
+返回类型  函数名（参数类型 参数名，参数类型  参数名……）
+{
+函数体
+}
+
+
+
 
