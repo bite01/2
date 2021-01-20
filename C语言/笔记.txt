@@ -75,6 +75,17 @@ static的作用：
 
 3、static可以令其定义变量内存区所有字节默认初始化为0。
 
+知识点九：
+"~" 按位取反的符号
+register int a=10   建议把a定义成寄存器变量
+unsingde int num =10   定义无符号位整形num
+typedef  类型重定义
+extern 用来修饰外部符号的
+#define:定义常量，定义宏
+定义宏：#define MAX（a,b）在编译器中会翻译成a>b?a:b
+
+
+
 
 
 
