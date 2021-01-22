@@ -82,8 +82,30 @@ extern 用来修饰外部符号的
 "*" 解引用操作符
 
 int a =10;
-int *p=&a;
+int* p=&a;
 *p=20;
+
+知识点十一：
+结构体：
+struct book //创建一个结构体类型
+{  char name[20];
+   short price;
+};
+int main()
+{
+struct book b1={"C语言程序设计"，55}；//创建一个该类型的结构体变量
+return 0；
+}
+
+结构体变量.成员
+结构体指针->成员
+
+name[20] ,name为一个数组，若要把上述代码中的C语言程序设计改名，则这样写
+strcpy(b1.name,"c++")  //在代码的前面要加上库函数string.h
+
+
+
+
 
 
 
